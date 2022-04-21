@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import './App.css';
+import '../App.css';
 
 const CounterUseState = ()=>{
     const [state, setState] = useState(0)

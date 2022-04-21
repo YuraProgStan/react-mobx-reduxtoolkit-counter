@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
-import './App.css';
+import '../App.css';
 import {useDispatch, useSelector} from "react-redux";
-import {decrement, increment} from "./slices/counterSlise";
+import {decrement, increment} from "../storeRedux/slices/counterSlise";
 
 const CounterReduxtoolkit = ()=>{
     const count = useSelector((state) => state.counter.value)

@@ -1,6 +1,6 @@
 import React, {useRef, useState} from "react";
-import './App.css';
-import {todo} from './store/todo'
+import '../App.css';
+import {todo} from '../store/todo'
 import {observer} from 'mobx-react-lite';
 
 const TodoMobx = observer(()=>{
@@ -17,6 +17,7 @@ const TodoMobx = observer(()=>{
 
     return(
         <div>
+            <h3>Todo Mobx</h3>
             <div key = {Date.now()}><button onClick={()=>todo.fetchTodos()}>fetch todo</button></div>
             <div>
             <input type="text" onChange={e =>setStateTodo(e.target.value)} value={stateTodo} placeholder = "Write text" name='todos' />

@@ -2,9 +2,9 @@ import {makeAutoObservable} from "mobx";
 
 class Todo {
     todos = [
-        {id: 1, title: 'Учись', completed: false},
-        {id: 2, title: 'Работай', completed: false},
-        {id: 3, title: 'Отдыхай', completed: false}
+        {id: Date.now(), title: 'Учись', completed: false},
+        {id: Date.now()+1, title: 'Работай', completed: false},
+        {id: Date.now()+2, title: 'Отдыхай', completed: false}
     ]
 
     constructor() {

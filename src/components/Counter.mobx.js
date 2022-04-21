@@ -1,6 +1,6 @@
 import React from "react";
-import './App.css';
-import {counter} from './store/counter'
+import '../App.css';
+import {counter} from '../store/counter'
 import {observer} from 'mobx-react-lite';
 
 const CounterMobx = observer(()=>{

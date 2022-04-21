@@ -1,19 +1,24 @@
 import './App.css';
-import {CounterMobx} from './Counter.mobx';
-import {CounterUseState} from "./Counter.usestate";
-import {TodoMobx} from "./Todo.mobx";
-import {CounterReduxtoolkit} from "./Counter.reduxtoolkit";
+import {Route, Routes} from "react-router-dom";
+import {MainPage} from './pages/MainPage';
+import {TodosPage} from "./pages/TodosPage";
+import {CountersPage} from "./pages/CountersPage";
+
 
 
 
 const App =() => {
     return (
         <div className="app">
-            <CounterMobx />
-            <CounterUseState />
-            <CounterReduxtoolkit />
 
-            <TodoMobx />
+<Routes>
+    <Route path = {'/'} element = {<MainPage />} >
+        <Route path = {'/counters'} element = {<CountersPage />} />
+        <Route path = {'/todos'} element = {<TodosPage />} />
+    </Route>
+</Routes>
+
+
         </div>
     );
 }
